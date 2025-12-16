@@ -70,3 +70,40 @@ userTwo.email = "chouhan9@gmail.com" // as in object it takes reference from hea
 // console.log(userOne); output is chouhan9@gmail.com
 // console.log(userTwo); output is chouhan9@gmail.com
 
+const name = "  abhiraj  "
+const repoCount = 50 
+// console.log(`hello name is ${name} and my repo count is ${repoCount}`); // this is called string interpolation 
+// console.log(name.charAt(0)); 
+const newString = name.substring(0,4) // here 0 is inclusive but 4 is not 
+// console.log(newString);
+
+const anotherString = name.slice(-6,4) // "size+index" will be the start point and if the start point is <0 then it will be teated as 0 only 
+// console.log(anotherString);
+
+const String1 = name.trim() // trims the leading and trailing spaces and doesnot changes the orginal string "name"
+// console.log(String1); // output is "abhiraj"
+// console.log(name); // output is "  abhiraj  v"
+   
+
+// ************VARIOUS STRING PROPERTIES *********
+
+// name.toUpperCase() => converts to upper case 
+// name.toLowerCase() => converts to lower case 
+// name.includes("abhi") => checks if a substring is present in a string or not ...here output is true 
+// name.indexOf("i") => output is 3 
+
+
+const GirlFriend= "abhiraj hates hates hates nisha"
+ // GirlFriend.replace("hates","loves") // writing just this wwont give the reulsts because you are not storing the results
+ const res = GirlFriend.replace("hates","loves") // now you store the results 
+ //console.log(res);// output is abhiraj loves hates hates nisha ...so you can see that it replaces only one hates
+ const ans = GirlFriend.replaceAll("hates","loves")
+ //console.log(ans); // now the output is abhiraj loves loves loves nisha
+ 
+// ******** SPLIT IN STRING (IMP FOR INTERVIEW) 
+const str = "The quick brown fox" 
+const res1 = str.split("") // creates an array with each word and spaces as an individual element 
+const res2 = str.split(" ") 
+console.log(res2[3]); // creates a array with spaces as condition for split and hence the array is ['the','quick','brown','fox'] 
+
+// ******in short if separatorn is not given then the whole stering becomes the single element of the array 
