@@ -70,7 +70,7 @@ userTwo.email = "chouhan9@gmail.com" // as in object it takes reference from hea
 // console.log(userOne); output is chouhan9@gmail.com
 // console.log(userTwo); output is chouhan9@gmail.com
 
-const name = "  abhiraj  "
+const name = "  abhiraj  " 
 const repoCount = 50 
 // console.log(`hello name is ${name} and my repo count is ${repoCount}`); // this is called string interpolation 
 // console.log(name.charAt(0)); 
